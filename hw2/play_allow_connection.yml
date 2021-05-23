@@ -4,11 +4,11 @@
    become_method: sudo
 
    tasks:
-   - name: UFW Allow ssh connection
+   - name: UFW reset state
      ufw:
-         state: enabled
+         state: reset
 
-   - name: UFW Allow ssh connection
+- name: UFW Allow ssh connection
      ufw:
          state: enabled
          rule: allow
