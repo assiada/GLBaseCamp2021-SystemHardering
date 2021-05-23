@@ -8,7 +8,7 @@
      ufw:
          state: reset
 
-- name: UFW Allow ssh connection
+   - name: UFW Allow ssh connection
      ufw:
          state: enabled
          rule: allow
