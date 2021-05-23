@@ -1,0 +1,19 @@
+---
+ - hosts: localhost
+   become: true
+   become_method: sudo
+
+   tasks:
+   - name: UFW Allow ssh connection
+     ufw:
+         rule: allow
+         from: 18.223.2.199
+         port: '22'
+         proto: tcp
+   
+ 
+     
+        
+      
+
+
