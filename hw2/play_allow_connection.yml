@@ -6,6 +6,7 @@
    tasks:
    - name: UFW Allow ssh connection
      ufw:
+         state: enabled
          rule: allow
          from: 18.223.2.199
          port: '22'
